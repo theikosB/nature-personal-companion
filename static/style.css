@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f6f1;
+    color: #243024;
+}
+
+.container {
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #657065;
+}
+
+.form-card,
+.result-card {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.field {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccd4cc;
+    border-radius: 8px;
+    font-size: 16px;
+    background: white;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background: #315c3a;
+    color: white;
+}
+
+button:hover {
+    background: #264b2f;
+}
+
+.hidden {
+    display: none;
+}
+
+.result-card {
+    margin-top: 30px;
+}
+
+.assignment-label {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #657065;
+}
+
+.assignment h2 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.assignment h3 {
+    font-size: 22px;
+    margin-top: 0;
+}
+
+.mission {
+    line-height: 1.6;
+    color: #4f5c50;
+}
+
+.assignment ol {
+    padding-left: 25px;
+}
+
+.assignment li {
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.special-rule,
+.completion {
+    margin-top: 25px;
+    padding: 16px;
+    border-radius: 10px;
+    background: #f3f6f1;
+}
+
+.special-rule p,
+.completion p {
+    margin-bottom: 0;
+    line-height: 1.5;
+}

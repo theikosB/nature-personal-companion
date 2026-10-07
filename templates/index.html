@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nature's Personal Companion</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <header>
+            <h1>🌿 Nature's Personal Companion</h1>
+            <p>Turn an ordinary place into a small adventure.</p>
+        </header>
+
+        <section class="form-card">
+
+            <h2>Tell us about your adventure</h2>
+
+            <div class="field">
+                <label for="environment">📍 Where are you?</label>
+
+                <select id="environment">
+                    <option value="park or natural area">🌳 Park / Nature</option>
+                    <option value="university or college campus">🏫 Campus</option>
+                    <option value="city street">🏙️ City / Street</option>
+                    <option value="residential neighbourhood">🏘️ Neighbourhood</option>
+                    <option value="beach or waterfront">🌊 Waterfront</option>
+                    <option value="other">✍️ Other</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label for="time">⏱️ How much time do you have?</label>
+
+                <select id="time">
+                    <option value="5 minutes">5 minutes</option>
+                    <option value="10 minutes">10 minutes</option>
+                    <option value="20 minutes" selected>20 minutes</option>
+                    <option value="30 minutes">30 minutes</option>
+                    <option value="60 minutes">60 minutes</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label for="mood">🧠 What's your mood?</label>
+
+                <select id="mood">
+                    <option value="bored">😴 Bored</option>
+                    <option value="stressed">😵 Stressed</option>
+                    <option value="curious">🔎 Curious</option>
+                    <option value="need to unwind">🧘 Need to unwind</option>
+                    <option value="energetic">⚡ Energetic</option>
+                    <option value="social">🎉 Social</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label for="company">👥 Who are you with?</label>
+
+                <select id="company">
+                    <option value="alone">🧍 Just me</option>
+                    <option value="one friend">🧑‍🤝‍🧑 A friend</option>
+                    <option value="a group">👥 A group</option>
+                </select>
+            </div>
+
+            <button id="generate-button">
+                🧭 Generate My Field Assignment
+            </button>
+
+        </section>
+
+        <section id="result" class="result-card hidden">
+            <!-- The AI-generated assignment will appear here -->
+        </section>
+
+    </main>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+
+</body>
+</html>
